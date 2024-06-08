@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Pandey | Portfolio
+        
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #dc8f8f;
+            background: #1c4d73;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #070707;
+        }
+
+        a {
+            color: #ff6363;
+            text-decoration: none;
+            font-weight:bolder;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            padding: 6rem 0;
+            text-align: center;
+            background: url('https://www.freepik.com/free-vector/creative-geometric-design-space_4159942.htm#query=portfolio%20background&position=1&from_view=keyword&track=ais_user&uuid=9c68e849-98d3-4eeb-97b5-e670259133bc') no-repeat center center/cover;
+            position: relative;
+            color: #ffcc00;
+        }
+
+        .hero::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #328da1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #4faee6;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #5b0381;
+        }
+
+        .portfolio-section {
+            padding: 4rem 0;
+        }
+
+        .portfolio-section h2 {
+            margin-bottom: 2rem;
+            color: #080808;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            width: 48%;
+            background: #CCD0CF;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(245, 7, 7, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item h3 {
+            margin: 1rem;
+            font-size: 1.4rem;
+            color: #495306;
+        }
+
+        .portfolio-item p {
+            margin: 0 1rem 1rem;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact-section {
+            background: #11212D;
+            color: #fff41b;
+            padding: 4rem 0;
+        }
+
+        .contact-section h2 {
+            margin-bottom: .5rem;
+        }
+
+        .portfolio-item button {
+            display: inline-block;
+            padding: .5rem;
+            font-size: 1rem;
+            color: #000000;
+            background: #b8bbcb;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .contact-section .container button {
+            display: inline-block;
+            padding: .5rem;
+            font-size: 1rem;
+            color: #000000;
+            background: #c6bf33da;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition:step-start;
+        }
+
+        /* Footer */
+        footer {
+            background: #ccd0cf;
+            padding: 2rem 0;
+            text-align: center;
+            color: #c974ed;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Ashish Pandey</h1>
+            <p>Andrioid Developer, Data Science & AI ML Student</p>
+            <a href="https://github.com/AshishPandey26" target="_blank">
+                <button class="cta-button">Explore My GitHub</button>
+            </a>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio-section container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Resume</h3>
+                    <a href="https://github.com/AshishPandey26/Streamlit-learning/blob/main/_pandaya10%40gmail.com%209997203414%20%20ashish-pandey-astronom.pdf " target="_blank">
+                        <button>Resume</button>
+                    </a>
+                    <p>This is My Resume</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h3>Project - Python CLI based Chat Messenger</h3>
+                    <a href="https://github.com/AshishPandey26/Python-CLI-Project" target="_blank">
+                        <button>Python CLI Messenger</button>
+                    </a>
+                    <p>Developing a Command Line nased messaging system which works on local network</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h3>Project - Flutter-To-DO-App </h3>
+                    <a href="https://github.com/AshishPandey26/Flutter-To-DO-App" target="_blank">
+                        <button>Flutter-To-DO-App</button>
+                    </a>
+                    <p>A To-Do App made using Flutter Framework Works with ios adn andriod both</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <h3>Project - Basic Flipkart HomePage Clone</h3>
+                    <a href="https://github.com/AshishPandey26/Flipkart-HomePage-Clone" target="_blank">
+                        <button>Flipkart HomePage</button>
+                    </a>
+                    <p>Designed Flipakrt HomePage using html Css while I was learning it</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Me Via</h2>
+                <a href="https://github.com/AshishPandey26">
+                    <button>github</button>
+                </a>
+                <a href="https://www.linkedin.com/in/ashish-pandey-astronom/">
+                    <button>linkedin</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ashish Pandey. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
